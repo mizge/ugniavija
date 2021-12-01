@@ -1,0 +1,114 @@
+body{
+    margin: auto;
+    font-family: sans-serif;
+}
+.header{
+    background-color: pink;
+    color: white;
+}
+.greeting{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 10%;
+    height: 40px;
+
+}
+.nav_header{
+    font-size: 20px;
+
+}
+.nav_buttons{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-right: 0px;
+    height: 100%;
+}
+.nav_button{
+    width: 100%;
+    min-width: 250px;
+    padding: 7px 0px;
+    text-align: center;
+    border-left: gainsboro 5px solid;
+    height: 100%;
+}
+
+.nav_button:hover{
+    background-color: gainsboro;
+    color: gray;
+    cursor: pointer;
+
+}
+.film_title{
+    font-size:25px;
+}
+p{
+    line-height: 1.6;
+}
+article + article {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 3px solid pink;
+}
+a{
+    color: purple;
+}
+a:hover{
+    color: lightgray;
+    text-decoration: underline;
+}
+a:visited{
+    color:purple;
+}
+.button{
+    margin-top: 7px;
+    background-color: #82D0F8; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+button:hover{
+    cursor: pointer;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+ td,  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding: 10px 20px;
+  }
+  
+ tr:nth-child(even){background-color: #f2f2f2;}
+  
+tr:hover {background-color: #ddd;}
+  
+ th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: pink;
+    color: white;
+  }
+  .cancel{
+    align-self: center;
+    width:100%;
+  }
+  .no_margin{
+      margin:0px;
+  }
