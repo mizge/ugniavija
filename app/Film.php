@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Film extends Model
 {
+    protected $fillable=['title', 'description'];
     protected $guarded=[];
     public function seanses()
     {

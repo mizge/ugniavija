@@ -11,7 +11,7 @@
         <h3>
             <b>Seansai</b>
         </h3>
-        @if($film->seanses == N)
+        @if(count($film->seanses) == 0)
             <p class="mt-4 block text-grey-200">Seansų šiam filmui nėra.</p>
         @else
         @foreach ($film->seanses as $seanse)
