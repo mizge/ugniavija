@@ -11,9 +11,9 @@
         <h3>
             <b>Seansai</b>
         </h3>
-        @if(count($film->seanses) == 0)
+        @if($film->seanses == N)
             <p class="mt-4 block text-grey-200">Seansų šiam filmui nėra.</p>
-        @endif
+        @else
         @foreach ($film->seanses as $seanse)
         <p> {{$seanse->date}} Likusių vietų skaičius: {{$seanse->free_amount}} </p>
         <p>Vieno bilieto kaina:  {{$seanse->price}}</p>
@@ -33,7 +33,7 @@
         @endauth
         <br/>
         @endforeach
-        
+        @endif
     </article>
     @endforeach
 </main>

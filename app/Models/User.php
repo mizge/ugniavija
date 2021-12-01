@@ -26,13 +26,8 @@ class User extends Authenticatable
         'password', 'remember_token'
         //, 'isAdmin', 'isDirector'
     ];
-
-    // /**
-    //  * The attributes that should be cast to native types.
-    //  *
-    //  * @var array
-    //  */
-    // protected $casts = [
-    //     'email_verified_at' => 'datetime',
-    // ];
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
 }
