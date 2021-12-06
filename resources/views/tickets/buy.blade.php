@@ -5,6 +5,8 @@
     <main class="max-w-6xl mx-auto space-y-6"> 
         <h2 class="film_title">
             Pasirinkite norimą bilietų į {{$seanse->film->title}} seansą {{$seanse->date}} už {{$seanse->price}} €  kiekį?
+        </br>
+        Likusių bilietų skaičius {{$seanse->free_amount}}.
         </h2>
         <form method="POST" action="/buy/tickets/{{$seanse->id}}" >
             @csrf
